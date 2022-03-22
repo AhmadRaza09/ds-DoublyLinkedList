@@ -16,4 +16,43 @@ public class DoublyLinkedList
 	
 	//store the size of the node in the chain
 	private int size;
+	
+	//add the node in the chain after the current node
+	public void add(int addValue)
+	{
+		DoublyNode newNode = new DoublyNode();
+		newNode.setValue(addValue);
+		
+		if(current == null)
+		{
+			current = newNode;
+			head = newNode;
+			tail = newNode;
+			current.setNext(null);
+			current.setPrev(null);
+		}
+		else
+		{
+			if(current.getNext() == null)
+			{
+				newNode.setNext(current.getNext());
+				newNode.setPrev(current);
+				current.setNext(newNode);
+				current = newNode;
+				tail = current;
+			}
+			else
+			{
+				newNode.setNext(current.getNext());
+				newNode.setPrev(current.getNext().getPrev());
+				current.setNext(newNode);
+				newNode.getNext().setPrev(newNode);
+				current = newNode;
+			}
+		}
+		
+		size = size + 1;
+		
+		
+	}
 }
