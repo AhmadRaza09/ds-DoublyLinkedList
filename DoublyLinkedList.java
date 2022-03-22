@@ -70,6 +70,15 @@ public class DoublyLinkedList
 		
 	}
 	
+	//update the value on which current node refer
+	public void update(int updateValue)
+	{
+		if(current != null)
+		{
+			current.setValue(updateValue);
+		}
+	}
+	
 	//get the value where current node piont, if current node is null then throws ListEmptyException
 	public int get() throws ListEmptyException
 	{

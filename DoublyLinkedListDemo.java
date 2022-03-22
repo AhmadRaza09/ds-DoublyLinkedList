@@ -12,6 +12,8 @@ public class DoublyLinkedListDemo
 		l1.add(4);
 		l1.add(7);
 		System.out.println(l1.get());
+		l1.update(-32);
+		System.out.println(l1.get());
 		
 	}
 }
