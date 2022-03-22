@@ -6,15 +6,12 @@
 public class DoublyLinkedListDemo
 {
 	
-	public static void main(String [] args)
+	public static void main(String [] args) throws ListEmptyException
 	{
 		DoublyLinkedList l1 = new DoublyLinkedList();
-		l1.add(3);
-		System.out.println("Size: " + l1.getSize());
 		l1.add(4);
-		System.out.println("Size: " + l1.getSize());
-		l1.add(6);
-		System.out.println("Size: " + l1.getSize());
+		l1.add(7);
+		System.out.println(l1.get());
 		
 	}
 }

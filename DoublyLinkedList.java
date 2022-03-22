@@ -69,4 +69,16 @@ public class DoublyLinkedList
 		
 		
 	}
+	
+	//get the value where current node piont, if current node is null then throws ListEmptyException
+	public int get() throws ListEmptyException
+	{
+		if(current != null)
+		{
+			return current.getValue();
+		}
+		
+		throw new ListEmptyException("List is empty");
+		
+	}
 }
