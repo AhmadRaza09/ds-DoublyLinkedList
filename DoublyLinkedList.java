@@ -17,6 +17,14 @@ public class DoublyLinkedList
 	//store the size of the node in the chain
 	private int size;
 	
+	public DoublyLinkedList()
+	{
+		head = null;
+		tail = null;
+		current = null;
+		size = 0;
+	}
+	
 	//return the size of the chain
 	public int getSize()
 	{
