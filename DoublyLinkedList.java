@@ -17,6 +17,12 @@ public class DoublyLinkedList
 	//store the size of the node in the chain
 	private int size;
 	
+	//return the size of the chain
+	public int getSize()
+	{
+		return size;
+	}
+	
 	//add the node in the chain after the current node
 	public void add(int addValue)
 	{

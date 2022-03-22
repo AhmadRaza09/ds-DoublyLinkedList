@@ -10,8 +10,11 @@ public class DoublyLinkedListDemo
 	{
 		DoublyLinkedList l1 = new DoublyLinkedList();
 		l1.add(3);
+		System.out.println("Size: " + l1.getSize());
 		l1.add(4);
+		System.out.println("Size: " + l1.getSize());
 		l1.add(6);
+		System.out.println("Size: " + l1.getSize());
 		
 	}
 }
