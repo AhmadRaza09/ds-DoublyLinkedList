@@ -11,10 +11,10 @@ public class DoublyNode
 	private int value;
 	
 	//store the refrence of the next node
-	private Node next;
+	private DoublyNode next;
 	
 	//store the refrence of the previous node
-	private Node prev;
+	private DoublyNode prev;
 	
 	public void setValue(int value)
 	{
@@ -27,25 +27,25 @@ public class DoublyNode
 		return value;
 	}
 	
-	public void setNext(Node next)
+	public void setNext(DoublyNode next)
 	{
 		
 		this.next = next;
 	}
 	
-	public Node getNext()
+	public DoublyNode getNext()
 	{
 		
 		return next;
 	}
 	
-	public void setPrev(Node prev)
+	public void setPrev(DoublyNode prev)
 	{
 		
 		this.prev = prev;
 	}
 	
-	public Node getPrev()
+	public DoublyNode getPrev()
 	{
 		
 		return prev;

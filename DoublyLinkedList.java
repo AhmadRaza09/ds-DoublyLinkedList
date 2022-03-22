@@ -6,13 +6,13 @@
 public class DoublyLinkedList
 {
 	//store the refrence of the first node
-	private Node head;
+	private DoublyNode head;
 	
 	//store the refrence of the last node
-	private Node tail;
+	private DoublyNode tail;
 	
 	//store the refrence of the current node this node move anywhere in the chain
-	private Node current;
+	private DoublyNode current;
 	
 	//store the size of the node in the chain
 	private int size;
