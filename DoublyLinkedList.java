@@ -115,6 +115,25 @@ public class DoublyLinkedList
 	
 	//traversing list operation
 	
+	//move the current reference to the next node in the chain
+	public boolean next()
+	{
+		
+		
+		if(head != null)
+		{
+			//if current is connected to the next node then return true
+			if(current.getNext() != null)
+			{
+				current = current.getNext();
+				return true;
+			}
+		}
+	
+		//if current is not connected to the next node then return false
+		return false;
+	}
+	
 	//piont the current to the head
 	public void start()
 	{

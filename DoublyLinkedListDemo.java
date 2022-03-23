@@ -12,10 +12,25 @@ public class DoublyLinkedListDemo
 		l1.add(4);
 		l1.add(7);
 		l1.add(10);
+	
+		l1.start();
+		for(int i = 1; i <= l1.getSize(); i++)
+		{
+			System.out.print(l1.get());
+			if(i < l1.getSize())
+			{
+				System.out.print("->");
+			}
+			l1.next();
+		}
+		System.out.println();
+	
 		System.out.println(l1.get());
 		l1.start();
-		System.out.println(l1.get());
-		l1.tail();
-		System.out.println(l1.get());
+		do
+		{
+			System.out.println(l1.get());
+		}
+		while(l1.next());
 	}
 }
