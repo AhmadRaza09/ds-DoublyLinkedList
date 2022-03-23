@@ -101,6 +101,26 @@ public class DoublyLinkedList
 		}
 	}
 	
+	//remove all the node from the chain
+	public void clear()
+	{
+		if(current != null)
+		{
+			current = head;
+			do
+			{
+				if(current.getNext() != null)
+				{
+					current.getNext().setPrev(null);
+				}
+			}
+			while(next());
+			head = null; 
+			tail = null;
+			current = null;
+		}
+	}
+	
 	//get the value where current node piont, if current node is null then throws ListEmptyException
 	public int get() throws ListEmptyException
 	{
