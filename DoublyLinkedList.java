@@ -160,6 +160,7 @@ public class DoublyLinkedList
 			head = null; 
 			tail = null;
 			current = null;
+			size = 0;
 		}
 	}
 	
