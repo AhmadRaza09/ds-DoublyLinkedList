@@ -13,7 +13,7 @@ public class DoublyLinkedListDemo
 		l1.add(7);
 		l1.add(10);
 	
-		l1.start();
+		l1.tail();
 		for(int i = 1; i <= l1.getSize(); i++)
 		{
 			System.out.print(l1.get());
@@ -21,16 +21,16 @@ public class DoublyLinkedListDemo
 			{
 				System.out.print("->");
 			}
-			l1.next();
+			l1.back();
 		}
 		System.out.println();
 	
 		System.out.println(l1.get());
-		l1.start();
+		l1.tail();
 		do
 		{
 			System.out.println(l1.get());
 		}
-		while(l1.next());
+		while(l1.back());
 	}
 }

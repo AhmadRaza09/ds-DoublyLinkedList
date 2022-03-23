@@ -146,4 +146,23 @@ public class DoublyLinkedList
 		current = tail;
 	}
 	
+	//move the current reference to the back node in the chain
+	public boolean back()
+	{
+		
+		
+		if(head != null)
+		{
+			//if current is connected to the back node then return true
+			if(current.getPrev() != null)
+			{
+				current = current.getPrev();
+				return true;
+			}
+		}
+	
+		//if current is not connected to the next node then return false
+		return false;
+	}
+	
 }
