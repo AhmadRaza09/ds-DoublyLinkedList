@@ -15,5 +15,7 @@ public class DoublyLinkedListDemo
 		System.out.println(l1.get());
 		l1.start();
 		System.out.println(l1.get());
+		l1.tail();
+		System.out.println(l1.get());
 	}
 }
