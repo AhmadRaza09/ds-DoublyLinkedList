@@ -70,6 +70,28 @@ public class DoublyLinkedList
 		
 	}
 	
+	//find the value if find then point current to that node
+	public boolean find(int findValue)
+	{
+		//for set current and lastCurrentNode
+		DoublyNode temp = head;
+		
+		for(int i = 1; i <= size; i++)
+		{
+			
+			if(temp.getValue() == findValue)
+			{
+				current = temp;
+				return true;
+			
+			}
+			temp = temp.getNext();
+		}
+		
+		return false;	
+		
+	}
+	
 	//update the value on which current node refer
 	public void update(int updateValue)
 	{
