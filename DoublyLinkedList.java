@@ -112,4 +112,13 @@ public class DoublyLinkedList
 		throw new ListEmptyException("List is empty");
 		
 	}
+	
+	//traversing list operation
+	
+	//piont the current to the head
+	public void start()
+	{
+		current = head;
+	}
+	
 }

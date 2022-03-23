@@ -12,14 +12,8 @@ public class DoublyLinkedListDemo
 		l1.add(4);
 		l1.add(7);
 		l1.add(10);
-		if(l1.find(11))
-		{
-			System.out.println(l1.get() + ": is found.");
-		}
-		else
-		{
-			System.out.println("Not found");
-		}
-		
+		System.out.println(l1.get());
+		l1.start();
+		System.out.println(l1.get());
 	}
 }
